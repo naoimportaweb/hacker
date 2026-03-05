@@ -1,0 +1,12 @@
+{
+    "name" : "local",
+    "version" : "1",
+    "default" : "default",
+    "token" : "OidkA1h*",
+    "aes" : "5234567895123451",
+    "connections" :
+    {
+        "default" :  { "type" : "mysql", "host" : "195.35.61.128", "user" : "u944249633_curso_hacker", "password" : "Tubular11el!Mix", "name" : "u944249633_curso_hacker", "port" : 3306 },
+        "remoto" :  { "type" : "remoto", "url" : "https://www.cursohacker.com.br/routine/mysql.php", "token" : "bf080fb4-c2bb-4266-9c58-2f5855a60e3a"}
+    }
+}

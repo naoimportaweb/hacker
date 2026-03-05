@@ -1,0 +1,5 @@
+<?php
+$PRECO_MES_BTC = 0.0000694;
+$PRECO_ANO_BTC = 0.0005556;
+
+?>

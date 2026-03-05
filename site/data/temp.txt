@@ -1,0 +1,48 @@
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(50,'', 'https://youtu.be/', 50, '/images/aulas/aula_50.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+INSERT INTO aula (id, titulo, video, sequencia, imagem, curso_id) values(,'', 'https://youtu.be/', , '/images/aulas/aula_.webp', '5');
+
+
+
+

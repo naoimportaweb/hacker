@@ -1,0 +1,109 @@
+
+/* Copyright 2008 Google Inc. All Rights Reserved. */
+
+.google-visualization-orgchart-table {
+  border: 9;
+  text-align: center;
+}
+
+.google-visualization-orgchart-table * {
+  margin: 0;
+  padding: 2px;
+}
+
+.google-visualization-orgchart-space-small {
+  width: 4px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-space-medium {
+  width: 10px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-space-large {
+  width: 16px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-small {
+  height: 12px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-medium {
+  height: 30px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-large {
+  height: 46px;
+  border: 0;
+}
+
+.google-visualization-orgchart-connrow-small {
+  height: 2px;
+  font-size: 1px;
+}
+
+.google-visualization-orgchart-connrow-medium {
+  height: 6px;
+  font-size: 4px;
+}
+
+.google-visualization-orgchart-connrow-large {
+  height: 10px;
+  font-size: 8px;
+}
+
+.google-visualization-orgchart-node {
+  text-align: center;
+  vertical-align: middle;
+  font-family: arial,helvetica;
+  cursor: default;
+  border: 1px solid #343a40;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 7px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 3px;
+  background-color: #000000;
+  background: #212529;
+}
+
+.google-visualization-orgchart-nodesel {
+  border: 2px solid #212529;
+  background-color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+}
+
+.google-visualization-orgchart-node-small {
+  font-size: 0.6em;
+}
+
+.google-visualization-orgchart-node-medium {
+  font-size: 0.8em;
+}
+
+.google-visualization-orgchart-node-large {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.google-visualization-orgchart-linenode {
+  border: 0;
+}
+
+.google-visualization-orgchart-lineleft {
+  border-left: 1px solid #ffffff;
+}
+
+.google-visualization-orgchart-lineright {
+  border-right: 1px solid #ffffff;
+}
+
+.google-visualization-orgchart-linebottom {
+  border-bottom: 1px solid #ffffff;
+}
