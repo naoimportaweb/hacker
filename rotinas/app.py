@@ -1,10 +1,9 @@
-
+#pip3 install lxml
+import os, requests, sys, traceback, hashlib, re, base64, json;
 
 url = 'https://www.blockchain.com/explorer/addresses/btc/bc1qfcrvahytrmhd2tpkg6u30ews6f9ukhgaqt34c8';
 url = 'https://www.cursohacker.com.br'
 url = 'https://blockchain.info/rawaddr/bc1qfcrvahytrmhd2tpkg6u30ews6f9ukhgaqt34c8';
-
-import os, requests, sys, traceback, hashlib, re, base64;
 
 from bs4 import BeautifulSoup
 from lxml import etree
@@ -45,9 +44,30 @@ class Web:
             print("Status code "+ str(page.status_code) +" " + url);
             traceback.print_exc();
         return  None;
-
+    def post(self, url, data, backup=True):
+        page = None;
+        headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0'}
+        try:
+            r = self.session.post(url, json=data);
+            print(r.status_code);
+            return r.text
+        except:
+            print("Status code "+ str(page.status_code) +" " + url);
+            traceback.print_exc();
+        return  None;
 w = Web();
-print(w.download(url));
+
+envelop = { "method" : "preco", "parameters" : {} };
+print(w.post("http://localhost/routine/tabela.php", envelop));
+
+
+text = w.download(url);
+js = json.loads( text );
+for tx in js["txs"]:
+    print("\t", tx["result"], "\t", tx["hash"]);
+
+
+
 #w.navegate(url);
 #elemento = w.element('//h1');
 #print(elemento);

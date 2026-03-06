@@ -34,12 +34,22 @@ $BODY_CSS        = [  ];
       <div class="form-group row">
         <div class="col-4">
         </div>
-        <div class="col-4">
+        <div class="col-2">
           <button id="submit1" type="button" class="btn btn-primary">Cadastrar</button>
         </div>
 
-        <div class="col-4">
+        <div class="col-1">
+        </div>
+
+        <div class="col-2">
           <button id="submit2" type="button" class="btn btn-primary">Entrar</button>
+        </div>
+
+        <div class="col-1">
+        </div>
+
+        <div class="col-2">
+          <button id="submit3" type="button" class="btn btn-primary">Esqueci</button>
         </div>
 
       </div>

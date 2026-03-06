@@ -251,7 +251,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 
 .blank-link {
   color: var(--bs-nav-link-color);
-  text-decoration: none;
+
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 .blank-link:hover {

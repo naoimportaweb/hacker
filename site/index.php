@@ -76,6 +76,9 @@ $aulas = $my->Datatable("select * from aula order by data desc limit 8", []);
                 <?php } ?>
 
         </div>
+        <div style="text-align: right;">
+            <a class="blank-link" href="historico.php" >Histórico completo</a>
+        </div>
     </div>
 
 
