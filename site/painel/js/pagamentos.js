@@ -33,7 +33,7 @@ function main(){
             if( o1[i].metodo == 1 ) {
                 valor = "0 (convite)";
             } else if( o1[i].metodo == 2 ) {
-                valor = "BTC " + valor;
+                valor = "BTC " + o1[i].valor;
             } else if( o1[i].metodo == 3 ) {
                 valor = "XMR " + valor;
             }

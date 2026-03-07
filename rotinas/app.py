@@ -57,14 +57,21 @@ class Web:
         return  None;
 w = Web();
 
-envelop = { "method" : "preco", "parameters" : {} };
-print(w.post("http://localhost/routine/tabela.php", envelop));
 
-
+#js = json.loads( w.post("http://localhost/routine/tabela.php", envelop) );
+#valor = str(js["anual"] * js["taxa"]);
+#valor = valor[valor.find(".") + 1:];
+#valor = int(valor);
+valor = 14160;
 text = w.download(url);
 js = json.loads( text );
+
 for tx in js["txs"]:
-    print("\t", tx["result"], "\t", tx["hash"]);
+    if tx["result"] > 0:
+        anos = tx["result"] / valor;
+        print("\t", tx["hash"], "\t", tx["result"], "\t", int(anos));
+        envelop = { "method" : "pagar", "parameters" : {"hash" : tx["hash"], "anos" : int(anos), "value" : tx["result"]} };
+        js = json.loads( w.post("https://cursohacker.com.br/routine/pagamento.php", envelop) );
 
 
 

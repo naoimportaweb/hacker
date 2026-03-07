@@ -4,6 +4,16 @@ session_start();
 require_once dirname(__DIR__) . "/api/mysql.php";
 
 
+function pagar($parametros){
+    $my = new Mysql("");
+    $buffer = $my->Datatable("SELECT * FROM pagamento where  hash = ? and data_inicio is null", [ $parametros["hash"] ]);
+    if(count($buffer) > 0) {
+        return $my->ExecuteNoQuery("UPDATE pagamento set data_inicio = now(), data_fim= DATE_ADD(now(), INTERVAL 1 YEAR), metodo = 2, valor = ? where id = ?", [$parametros["value"],  $buffer[0]["id"] ]);
+    }
+    return array("total" => 0 );
+}
+
+
 function enviar($parametros){
     $my = new Mysql("");
     $hash = trim($parametros["tx_id"]);

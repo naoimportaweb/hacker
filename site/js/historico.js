@@ -17,7 +17,7 @@ function main(){
     var tbody = $("#tabela_tbody");
     tbody.html("");
     post1("/routine/aula.php", "historico", {}, function(o1, i1, s1, e1){  
-        console.log(o1, i1, s1, e1);
+
         for(var i = 0; i < o1.length; i++) {
             var data = isoToBr(o1[i].data);
             

@@ -61,7 +61,7 @@ function enviar(){
 function recuperar(){
     post1("/routine/cadastro.php", "enviar_recuperacao", {"email" : txt_email.val()}, 
     function(o2, i2, s2, e2){ 
-        console.log(o2, i2, s2, e2);
+
         if( s2 == true ) {
             alert("Um e-mail foi enviado com um link, clique e redefina sua senha.");
         } else {

